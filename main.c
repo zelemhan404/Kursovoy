@@ -24,8 +24,8 @@
 
 #define Q_LIMIT           50.0
 
-/* ---- прототипы ---- */
-int    read_x(double *x);           /* 0 — успех, -1 — ошибка */
+
+int    read_x(double *x);          
 double calc_q(double x);
 int    get_state(double q);
 void   print_result(double x, double q, int state);
@@ -58,7 +58,7 @@ int main(void)
     return 0;
 }
 
-/* Ввод давления. Возвращает 0 при успехе, -1 при ошибке. */
+
 int read_x(double *x)
 {
     printf("Введите x (бар): ");
