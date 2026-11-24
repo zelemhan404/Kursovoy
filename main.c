@@ -84,11 +84,6 @@ int read_x(double *x)
     return 0;
 }
 
-/* Q(X) по README:
- *   x < 2.2         : 5*sqrt(x - 1.2) + 5
- *   2.2 <= x <= 4.2 : 2*(x - 3.2) + 50
- *   x > 4.2         : 4*ln(x - 2.2) + 60
- */
 double calc_q(double x)
 {
     if (x < THRESHOLD_LOW) {
